@@ -1,6 +1,24 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/globals.scss";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import type { AppProps } from "next/app";
+import { makeServer } from "../src/testing/mockServer/mirage";
+import Head from "next/head";
+
+const queryClient = new QueryClient();
+
+if (process.env.NODE_ENV === "development") {
+  makeServer({ environment: "development" });
+}
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Head>
+        <title>Alexwilkinson.co</title>
+        <meta name="description" content="my place to be" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Component {...pageProps} />
+    </QueryClientProvider>
+  );
 }

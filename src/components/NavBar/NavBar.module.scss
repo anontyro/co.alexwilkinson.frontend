@@ -1,0 +1,37 @@
+@import "../../scss/spacing";
+
+.navBarContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: px-to-rem(20px);
+}
+
+.navBarLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: px-to-rem(30px);
+  font-weight: 300;
+  color: yellowgreen;
+  text-decoration: none;
+  font-family: "Share Tech Mono", monospace;
+  text-shadow: px-to-rem(3px) px-to-rem(1px) px-to-rem(3px) hotpink;
+}
+
+.mainNav {
+  li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: underline;
+    font-size: px-to-rem(25px);
+    text-decoration-color: yellowgreen;
+    font-family: "VT323", monospace;
+
+    &:hover {
+      color: hotpink;
+      text-decoration: none;
+      text-shadow: 2px 1px 2px yellowgreen;
+    }
+  }
+}
