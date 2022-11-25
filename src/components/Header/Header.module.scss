@@ -1,0 +1,11 @@
+@import "../../scss/spacing";
+
+.heading1 {
+  font-size: px-to-rem(25px);
+  text-shadow: px-to-rem(3px) px-to-rem(1px) px-to-rem(5px) hotpink;
+}
+
+.heading2 {
+  font-size: px-to-rem(20px);
+  text-shadow: px-to-rem(3px) px-to-rem(1px) px-to-rem(5px) greenyellow;
+}
