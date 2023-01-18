@@ -1,9 +1,12 @@
 import styles from "./NavBar.module.scss";
+import Text from "../../components/Text";
 
 const NavBar: React.FC = () => {
   return (
     <div className={styles.navBarContainer}>
-      <div className={styles.navBarLogo}>Alex Wilkinson</div>
+      <Text className={styles.navBarLogo} component="h1" variant="brand">
+        Alex W
+      </Text>
       <ol className={styles.mainNav}>
         <li>Home</li>
         <li>Projects</li>

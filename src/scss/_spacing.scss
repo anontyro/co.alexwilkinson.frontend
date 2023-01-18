@@ -5,3 +5,12 @@
 
   @return $raw * 1rem;
 }
+
+@function my-spacing($multiplier) {
+  $px-value: $multiplier * 8px;
+  $rem-value: px-to-rem($px-value);
+
+  @return $rem-value;
+}
+
+$spacing-pixel: px-to-rem(1px) !default;

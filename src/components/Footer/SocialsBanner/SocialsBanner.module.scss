@@ -1,0 +1,14 @@
+@import "../../../scss/colours";
+@import "../../../scss/spacing";
+
+.bannerWrapper {
+  display: flex;
+  position: relative;
+  background-color: $site-colour-primary;
+  width: px-to-rem(170px);
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding: px-to-rem(3px);
+  transform: rotate(-5deg);
+  margin-bottom: px-to-rem(10px);
+}
