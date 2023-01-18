@@ -16,14 +16,16 @@
   border-right: px-to-rem(2px) solid $site-black;
   padding: 0 px-to-rem(25px);
   flex-shrink: 0;
+  background-color: $site-colour-primary;
   &:hover {
-    background-color: $site-colour-primary;
+    background-color: $site-white;
     text-decoration: none;
   }
 }
 
 .feedbackBtn {
   color: $site-white;
+  cursor: pointer;
   background-color: $site-black;
   display: flex;
   align-items: center;
@@ -31,6 +33,11 @@
   border-left: px-to-rem(2px) solid $site-black;
   padding: 0 px-to-rem(25px);
   flex-shrink: 0;
+  &:hover {
+    background-color: $site-white;
+    color: $site-black;
+    text-decoration: none;
+  }
 }
 
 .navBarLogo {

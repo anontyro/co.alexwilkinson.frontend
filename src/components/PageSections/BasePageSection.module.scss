@@ -1,0 +1,23 @@
+@import "../../scss/spacing";
+@import "../../scss/colours";
+
+.sectionContainer {
+  position: relative;
+  margin: px-to-rem(25px) 0;
+}
+
+.textContainer {
+  background-color: $site-colour-secondary;
+  padding: px-to-rem(20px);
+  border: px-to-rem(1px) solid $site-colour-primary;
+}
+.backgroundSqaure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  background-color: $site-colour-primary;
+  transform: rotate(-3deg);
+}
