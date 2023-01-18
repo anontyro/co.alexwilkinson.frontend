@@ -1,5 +1,6 @@
 @import "../../scss/spacing";
 @import "../../scss/colours";
+@import "../../scss/breakpoints";
 
 .standardLayout {
   height: 100%;
@@ -19,10 +20,13 @@
 }
 
 .mainContent {
-  width: 75%;
+  width: 100%;
   margin: auto;
   flex: 1 0 auto;
   max-width: px-to-rem(1080px);
+  @include breakpointTablet {
+    width: 75%;
+  }
 }
 
 .mainFooter {

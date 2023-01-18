@@ -4,12 +4,6 @@ $breakpoint-mobile: 320 * $spacing-pixel !default;
 $breakpoint-tablet: 768 * $spacing-pixel !default;
 $breakpoint-desktop: 1024 * $spacing-pixel !default;
 
-@mixin breakpointMobile {
-  @media (min-width: #{$breakpoint-mobile}) {
-    @content;
-  }
-}
-
 @mixin breakpointTablet {
   @media (min-width: #{$breakpoint-tablet}) {
     @content;

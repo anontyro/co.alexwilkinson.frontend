@@ -1,23 +1,39 @@
 @import "../../scss/spacing";
 @import "../../scss/colours";
+@import "../../scss/breakpoints";
 
 .sectionContainer {
   position: relative;
-  margin: px-to-rem(25px) 0;
+  overflow: hidden;
+
+  @include breakpointTablet {
+    margin: px-to-rem(25px) 0;
+    overflow: initial;
+  }
 }
 
 .textContainer {
   background-color: $site-colour-secondary;
-  padding: px-to-rem(20px);
   border: px-to-rem(1px) solid $site-colour-primary;
+  padding: px-to-rem(10px);
+  margin: px-to-rem(10px);
+
+  @include breakpointTablet {
+    padding: px-to-rem(20px);
+    margin: 0;
+  }
 }
 .backgroundSqaure {
-  position: absolute;
   top: 0;
   left: 0;
+  position: absolute;
   width: 100%;
   z-index: -1;
   height: 100%;
   background-color: $site-colour-primary;
-  transform: rotate(-3deg);
+  transform: rotate(-8deg);
+
+  @include breakpointTablet {
+    transform: rotate(-3deg);
+  }
 }
