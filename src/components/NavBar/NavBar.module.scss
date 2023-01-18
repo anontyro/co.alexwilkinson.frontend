@@ -1,9 +1,36 @@
 @import "../../scss/spacing";
+@import "../../scss/colours";
 
 .navBarContainer {
   display: flex;
   justify-content: space-between;
-  padding: px-to-rem(20px);
+  border-bottom: px-to-rem(2px) solid $site-black;
+  background-color: $site-white;
+}
+
+.brandContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  border-right: px-to-rem(2px) solid $site-black;
+  padding: 0 px-to-rem(25px);
+  flex-shrink: 0;
+  &:hover {
+    background-color: $site-colour-primary;
+    text-decoration: none;
+  }
+}
+
+.feedbackBtn {
+  color: $site-white;
+  background-color: $site-black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: px-to-rem(2px) solid $site-black;
+  padding: 0 px-to-rem(25px);
+  flex-shrink: 0;
 }
 
 .navBarLogo {
@@ -12,20 +39,20 @@
   justify-content: center;
 }
 
-.mainNav {
-  li {
-    cursor: pointer;
-    display: inline-block;
-    margin: 0 10px;
-    text-decoration: underline;
-    font-size: px-to-rem(25px);
-    text-decoration-color: yellowgreen;
-    font-family: "VT323", monospace;
+nav.navBar {
+  width: 100%;
+  .mainNav {
+    width: 100%;
+    li {
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 px-to-rem(15px);
+      font-size: px-to-rem(18px);
 
-    &:hover {
-      color: hotpink;
-      text-decoration: none;
-      text-shadow: 2px 1px 2px yellowgreen;
+      &:hover {
+        color: $site-colour-primary;
+        text-decoration: none;
+      }
     }
   }
 }
