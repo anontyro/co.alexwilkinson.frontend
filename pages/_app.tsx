@@ -6,9 +6,10 @@ import Head from "next/head";
 
 const queryClient = new QueryClient();
 
-if (process.env.NODE_ENV === "development") {
-  makeServer({ environment: "development" });
-}
+// TODO: renable this when it is required later on
+// if (process.env.NODE_ENV === "development") {
+//   makeServer({ environment: "development" });
+// }
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
