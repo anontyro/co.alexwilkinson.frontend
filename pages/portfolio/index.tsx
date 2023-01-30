@@ -1,8 +1,10 @@
 import FullWidthBox from "@/components/PageSections/FullWidthBox/FullWidthBox";
 import StandardLayout from "@/components/_layout/StandardLayout";
 import Text from "@/components/Text";
-import InfoCard from "@/components/Cards/InfoCard/InfoCard";
+import InfoCard from "@/components/Cards/ProjectCard/ProjectCard";
 import { usePortfolioPageContentQuery } from "@/hooks/api/usePortfolioPageContentQuery";
+
+import styles from "./Portfolio.module.scss";
 
 const PortfolioPage: React.FC = () => {
   const { data: pageContent, isLoading } = usePortfolioPageContentQuery();
@@ -14,7 +16,11 @@ const PortfolioPage: React.FC = () => {
           <FullWidthBox title={pageContent.header.title}>
             <Text component="p">{pageContent.header.content}</Text>
           </FullWidthBox>
-          <InfoCard />
+          <div className={styles.myProjectsContainer}>
+            {pageContent.myProjects.map((project) => (
+              <InfoCard key={project.id} project={project} />
+            ))}
+          </div>
         </>
       )}
     </StandardLayout>

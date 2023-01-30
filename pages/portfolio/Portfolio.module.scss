@@ -1,0 +1,12 @@
+@import "../../src/scss/spacing";
+@import "../../src/scss/colours";
+@import "../../src/scss/breakpoints";
+
+.myProjectsContainer {
+  display: block;
+  width: 100%;
+  flex-wrap: wrap;
+  @include breakpointDesktop {
+    display: flex;
+  }
+}

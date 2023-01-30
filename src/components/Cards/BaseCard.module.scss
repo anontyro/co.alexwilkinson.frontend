@@ -7,10 +7,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: px-to-rem(300px);
-  width: px-to-rem(500px);
-  margin: px-to-rem(15px);
+  width: 95%;
+  margin: px-to-rem(15px) auto;
   border-radius: 0.5rem;
   background-color: #fff;
   border: px-to-rem(4px) solid $site-black;
@@ -28,6 +27,10 @@
     width: 100%;
     flex-grow: 0;
     flex-shrink: 0;
+  }
+  @include breakpointDesktop {
+    width: px-to-rem(340px);
+    margin: px-to-rem(15px);
   }
 }
 

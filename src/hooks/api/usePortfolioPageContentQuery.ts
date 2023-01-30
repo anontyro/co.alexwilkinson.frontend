@@ -12,13 +12,25 @@ type PortfolioPageData = {
   myTalks: any[];
 };
 
-const mapProjectData = (projects: ContentType[]) => {
+export type MyProjectItem = {
+  title: string;
+  id: string;
+  description: string;
+  images: string[];
+  meta: {
+    location: string;
+    url?: string | null;
+    tags?: string[];
+  };
+};
+
+const mapProjectData = (projects: ContentType[]): MyProjectItem[] => {
   return projects.map((project) => {
     return {
       title: findDataString(project.content, "Title"),
       id: findDataString(project.content, "Id"),
       description: findDataString(project.content, "Body"),
-      image: findDataString(project.content, "Images"),
+      images: findDataByType<string[]>(project.content, "Images") ?? [],
       meta: {
         ...project.meta,
         location: findDataString(project.content, "GeoLocation"),
