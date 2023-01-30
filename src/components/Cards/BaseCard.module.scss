@@ -1,0 +1,48 @@
+@import "../../scss/spacing";
+@import "../../scss/colours";
+@import "../../scss/breakpoints";
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: px-to-rem(300px);
+  width: px-to-rem(500px);
+  margin: px-to-rem(15px);
+  border-radius: 0.5rem;
+  background-color: #fff;
+  border: px-to-rem(4px) solid $site-black;
+  box-shadow: 5px 5px 0rem 0px black;
+  .header {
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  .body {
+    width: 100%;
+    flex-grow: 1;
+  }
+  .footer {
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+
+.padding-none {
+  padding: 0;
+}
+
+.padding-small {
+  padding: px-to-rem(10px);
+}
+
+.padding-medium {
+  padding: px-to-rem(20px);
+}
+
+.padding-large {
+  padding: px-to-rem(30px);
+}
