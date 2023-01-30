@@ -1,6 +1,8 @@
+import classnames from "classnames";
 import { APP_HOME, APP_ROUTES } from "@/consts/routes";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { NextRouter, useRouter } from "next/router";
+import { useState } from "react";
 import Text from "../../components/Text";
 import HamburgerIcon from "../Icons/hamburger.svg";
 
@@ -19,44 +21,63 @@ const ExternalLink: React.FC<ExternalLinkProps> = ({ href, text }) => (
   </li>
 );
 
+const mapRoutes = (router: NextRouter): React.ReactNode[] => {
+  const output: React.ReactNode[] = [];
+  for (const route in APP_ROUTES) {
+    const routeObj = APP_ROUTES[route];
+    const isActive = router.asPath === routeObj.path;
+
+    if (routeObj.isExternal) {
+      output.push(
+        <ExternalLink
+          key={routeObj.path}
+          href={routeObj.path}
+          text={routeObj.text}
+        />
+      );
+      continue;
+    }
+
+    output.push(
+      <li key={routeObj.path} className={isActive ? styles.active : ""}>
+        <Link href={routeObj.path}>{routeObj.text}</Link>
+      </li>
+    );
+  }
+
+  return output;
+};
+
 const MainNav: React.FC = () => {
   const router = useRouter();
 
-  const mapRoutes = (): React.ReactNode[] => {
-    const output: React.ReactNode[] = [];
-    for (const route in APP_ROUTES) {
-      const routeObj = APP_ROUTES[route];
-      const isActive = router.asPath === routeObj.path;
-
-      if (routeObj.isExternal) {
-        output.push(
-          <ExternalLink
-            key={routeObj.path}
-            href={routeObj.path}
-            text={routeObj.text}
-          />
-        );
-        continue;
-      }
-
-      output.push(
-        <li key={routeObj.path} className={isActive ? styles.active : ""}>
-          <Link href={routeObj.path}>{routeObj.text}</Link>
-        </li>
-      );
-    }
-
-    return output;
-  };
-
   return (
     <nav className={styles.navBar}>
-      <ol className={styles.mainNav}>{mapRoutes()}</ol>
+      <ol className={styles.mainNav}>{mapRoutes(router)}</ol>
+    </nav>
+  );
+};
+
+type MobileNavProps = {
+  onClose: () => void;
+  isOpen?: boolean;
+};
+
+const MobileNav: React.FC<MobileNavProps> = ({ onClose, isOpen }) => {
+  const router = useRouter();
+  const isMobileNavOpen = isOpen ? styles.mobileNavOpen : "";
+  return (
+    <nav className={classnames(styles.mobileNav, isMobileNavOpen)}>
+      <ol className={classnames(styles.mobileNavList)}>{mapRoutes(router)}</ol>
+      <div className={styles.closeContainer}>
+        <a onClick={onClose} className={styles.close}></a>
+      </div>
     </nav>
   );
 };
 
 const NavBar: React.FC = () => {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   return (
     <div className={styles.navBarContainer}>
       <div className={styles.brandContainer}>
@@ -66,10 +87,18 @@ const NavBar: React.FC = () => {
           </Text>
         </Link>
       </div>
-      <div className={styles.hamburgerMenu}>
+      <div
+        onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
+        className={styles.hamburgerMenu}
+      >
         <HamburgerIcon />
       </div>
       <MainNav />
+
+      <MobileNav
+        isOpen={isMobileNavOpen}
+        onClose={() => setIsMobileNavOpen(!isMobileNavOpen)}
+      />
       <div className={styles.feedbackBtn}>
         <a
           target="_blank"

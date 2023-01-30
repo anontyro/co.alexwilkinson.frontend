@@ -2,12 +2,15 @@
 @import "../../scss/colours";
 @import "../../scss/breakpoints";
 
+$nav-height: px-to-rem(54px);
+
 .navBarContainer {
+  position: relative;
   display: flex;
   justify-content: space-between;
   border-bottom: px-to-rem(2px) solid $site-black;
   background-color: $site-white;
-  height: px-to-rem(54px);
+  height: $nav-height;
 }
 
 .brandContainer {
@@ -64,27 +67,119 @@
   justify-content: center;
 }
 
+.mainNav {
+  width: 100%;
+  li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 px-to-rem(15px);
+    font-size: px-to-rem(18px);
+
+    &:hover {
+      color: $site-colour-primary;
+      text-decoration: none;
+    }
+  }
+  li.active {
+    color: $site-colour-primary;
+  }
+}
+
 nav.navBar {
   display: none;
   width: 100%;
-  .mainNav {
-    width: 100%;
-    li {
-      cursor: pointer;
-      display: inline-block;
-      margin: 0 px-to-rem(15px);
-      font-size: px-to-rem(18px);
-
-      &:hover {
-        color: $site-colour-primary;
-        text-decoration: none;
-      }
-    }
-    li.active {
-      color: $site-colour-primary;
-    }
-  }
+  @extend .mainNav;
   @include breakpointTablet {
     display: inherit;
   }
+}
+
+nav.mobileNav {
+  display: flex;
+  visibility: hidden;
+  height: 0;
+  flex-direction: column;
+  position: absolute;
+  top: $nav-height;
+  background-color: $site-white;
+  width: 100%;
+  z-index: 100;
+  margin-bottom: px-to-rem(50px);
+  border-bottom: px-to-rem(2px) solid $site-black;
+  transition: all 0.26s ease-in-out;
+
+  .mobileNavList {
+    @extend .mainNav;
+    padding: 0;
+    height: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+
+    li {
+      margin: px-to-rem(20px) 0;
+    }
+  }
+  @include breakpointTablet {
+    display: none;
+  }
+}
+
+nav.mobileNav.mobileNavOpen {
+  visibility: visible;
+  height: px-to-rem(330px);
+  .mobileNavList {
+    opacity: 1;
+    height: px-to-rem(330px);
+  }
+  .closeContainer {
+    opacity: 1;
+  }
+}
+
+// close button
+
+.closeContainer {
+  display: flex;
+  cursor: pointer;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+  margin: auto;
+  height: px-to-rem(60px);
+  &after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.close {
+  position: absolute;
+  width: px-to-rem(32px);
+  height: px-to-rem(32px);
+  opacity: 0.5;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: px-to-rem(15px);
+  content: " ";
+  height: px-to-rem(33px);
+  width: px-to-rem(2px);
+  background-color: $site-colour-primary;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
 }

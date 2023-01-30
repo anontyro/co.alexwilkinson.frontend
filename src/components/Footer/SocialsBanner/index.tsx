@@ -7,10 +7,10 @@ import Link from "next/link";
 import styles from "./SocialsBanner.module.scss";
 
 const SOCIAL_LINKS = {
-  FACEBOOK: "",
-  LINKEDIN: "",
-  TWITTER: "",
-  GITHUB: "",
+  FACEBOOK: "https://www.facebook.com/AWILKINSON.SG",
+  LINKEDIN: "https://www.linkedin.com/in/wilkinsonalexander",
+  TWITTER: "https://twitter.com/alexwilkinson",
+  GITHUB: "https://github.com/anontyro",
 };
 
 const SocialsBanner: React.FC = () => {
