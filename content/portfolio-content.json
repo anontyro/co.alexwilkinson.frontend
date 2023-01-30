@@ -1,0 +1,76 @@
+{
+  "pageContent": {
+    "content": [
+      {
+        "type": "TextBlock",
+        "content": [
+          {
+            "type": "Title",
+            "content": "My Portfolio"
+          },
+          {
+            "type": "Body",
+            "content": "This is a showcase of some of my projects I have worked on over the course of my career both professionally and personally. Check out my Github for more projects and code samples."
+          }
+        ]
+      },
+      {
+        "type": "StandardList",
+        "content": [
+          {
+            "type": "Item",
+            "meta": {
+              "url": "https://impala.travel",
+              "tags": [
+                "Professional",
+                "React",
+                "Node",
+                "GraphQL",
+                "AWS",
+                "Docker",
+                "Kubernetes",
+                "Terraform",
+                "NextJS"
+              ]
+            },
+            "content": [
+              {
+                "type": "Title",
+                "content": "Impala No-Code"
+              },
+              {
+                "type": "Body",
+                "content": "A no-code platform for building and deploying websites and web apps. I worked on the frontend and backend of the platform, as well as the deployment infrastructure."
+              },
+              {
+                "type": "Id",
+                "content": "b8184265-9be1-4e74-bf66-af3f3120d7c6"
+              },
+              {
+                "type": "Images",
+                "content": [
+                  {
+                    "type": "Image",
+                    "content": "https://impala.travel/static/impala-landing-1-2x.png"
+                  },
+                  {
+                    "type": "Image",
+                    "content": "https://impala.travel/static/impala-landing-1-2x.png"
+                  },
+                  {
+                    "type": "Image",
+                    "content": "https://impala.travel/static/impala-landing-1-2x.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "VideoList",
+        "content": []
+      }
+    ]
+  }
+}
