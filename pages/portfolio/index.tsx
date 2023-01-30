@@ -1,6 +1,7 @@
 import FullWidthBox from "@/components/PageSections/FullWidthBox/FullWidthBox";
 import StandardLayout from "@/components/_layout/StandardLayout";
 import Text from "@/components/Text";
+import InfoCard from "@/components/Cards/InfoCard/InfoCard";
 
 const PAGE_CONTENT = {
   TITLE: "my portfolio",
@@ -15,6 +16,7 @@ const PortfolioPage: React.FC = () => {
       <FullWidthBox title={PAGE_CONTENT.TITLE}>
         <Text component="p">{PAGE_CONTENT.CONTENT}</Text>
       </FullWidthBox>
+      <InfoCard />
     </StandardLayout>
   );
 };
