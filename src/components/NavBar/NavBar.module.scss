@@ -80,6 +80,9 @@ nav.navBar {
         text-decoration: none;
       }
     }
+    li.active {
+      color: $site-colour-primary;
+    }
   }
   @include breakpointTablet {
     display: inherit;
