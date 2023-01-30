@@ -1,0 +1,26 @@
+@import "../../../scss/spacing";
+@import "../../../scss/colours";
+@import "../../../scss/breakpoints";
+
+.boxContainer {
+  position: relative;
+  overflow: hidden;
+  background-color: $site-colour-secondary;
+  border: px-to-rem(1px) solid $site-colour-primary;
+  padding: px-to-rem(10px);
+  margin: px-to-rem(10px);
+  box-shadow: 7px 5px 0 1px $site-colour-primary;
+
+  .boxHeader {
+    text-transform: capitalize;
+  }
+
+  .boxContent {
+    margin: px-to-rem(10px) 0;
+  }
+
+  @include breakpointTablet {
+    margin: px-to-rem(10px) 0;
+    overflow: initial;
+  }
+}

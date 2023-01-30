@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { AllHTMLAttributes, forwardRef } from "react";
+import { AllHTMLAttributes } from "react";
 
 import styles from "./Text.module.scss";
 

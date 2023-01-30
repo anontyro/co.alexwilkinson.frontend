@@ -1,8 +1,8 @@
 import styles from "./PositionCentre.module.scss";
 
-interface Props {
+type Props = {
   children: React.ReactNode;
-}
+};
 
 const PositionCentre: React.FC<Props> = ({ children }) => {
   return <div className={styles.wrapperCentre}>{children}</div>;
