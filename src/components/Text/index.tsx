@@ -11,6 +11,7 @@ export interface TextProps extends AllHTMLAttributes<HTMLElement> {
     | "heading3"
     | "brand"
     | "heroBody"
+    | "bigBody"
     | "body"
     | "small";
 }

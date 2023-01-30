@@ -26,14 +26,34 @@
     -1px 1px 4px #000000;
 }
 
+.heading2 {
+  font-size: px-to-rem(22px);
+  font-weight: 900;
+  color: $site-black;
+  margin-bottom: px-to-rem(14px);
+}
+
+.heading3 {
+  font-size: px-to-rem(18px);
+  font-weight: 900;
+  color: $site-black;
+  margin-bottom: px-to-rem(14px);
+}
+
 .heroBody {
   font-size: px-to-rem(24px);
   font-weight: 400;
   line-height: px-to-rem(36px);
 }
 
-.body {
+.bigBody {
   font-size: px-to-rem(18px);
+  font-weight: 400;
+  line-height: px-to-rem(28px);
+}
+
+.body {
+  font-size: px-to-rem(16px);
   font-weight: 400;
   line-height: px-to-rem(28px);
 }

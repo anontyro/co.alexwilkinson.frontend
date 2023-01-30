@@ -1,0 +1,29 @@
+@import "../../scss/spacing";
+@import "../../scss/colours";
+@import "../../scss/breakpoints";
+
+.button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: $site-white;
+  border: 2px solid $site-black;
+  border-radius: 5px;
+  color: $site-black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Syne", "sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 3px 3px 0 0 black;
+  &:hover {
+    background-color: $site-colour-secondary;
+    color: $site-white;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}

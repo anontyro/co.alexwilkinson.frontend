@@ -1,27 +1,48 @@
+import PrimaryButton from "@/components/Buttons/PrimaryButton/PrimaryButton";
+import Text from "@/components/Text";
 import { MyProjectItem } from "@/hooks/api/usePortfolioPageContentQuery";
 import BaseCard from "../BaseCard";
 import styles from "./ProjectCard.module.scss";
 
-const ProjectCardHeader: React.FC = () => {
+type ProjectCardHeaderProps = {
+  title: string;
+  tags: string[];
+};
+
+const ProjectCardHeader: React.FC<ProjectCardHeaderProps> = ({
+  title,
+  tags,
+}) => {
   return (
     <div className={styles.header}>
-      <h1>Info Card Header</h1>
+      <Text component="h2" variant="heading3">
+        {title}
+      </Text>
     </div>
   );
 };
 
-const ProjectCardBody: React.FC = () => {
+type ProjectCardBodyProps = {
+  body: string;
+};
+
+const ProjectCardBody: React.FC<ProjectCardBodyProps> = ({ body }) => {
   return (
     <div className={styles.body}>
-      <h1>Info Card Body</h1>
+      <Text component="p" variant="body">
+        {body}
+      </Text>
     </div>
   );
 };
 
 const ProjectCardFooter: React.FC = () => {
+  const onClick = () => {};
   return (
     <div className={styles.footer}>
-      <button>Find out more</button>
+      <div className={styles.footerBtn}>
+        <PrimaryButton icon="LinkIcon" text="Find out more" onClick={onClick} />
+      </div>
     </div>
   );
 };
@@ -34,8 +55,13 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
   return (
     <BaseCard>
       {{
-        header: <ProjectCardHeader />,
-        body: <ProjectCardBody />,
+        header: (
+          <ProjectCardHeader
+            title={project.title}
+            tags={project.meta.tags ?? []}
+          />
+        ),
+        body: <ProjectCardBody body={project.description} />,
         footer: <ProjectCardFooter />,
       }}
     </BaseCard>

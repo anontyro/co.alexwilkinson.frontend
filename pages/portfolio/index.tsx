@@ -14,7 +14,9 @@ const PortfolioPage: React.FC = () => {
       {pageContent && !isLoading && (
         <>
           <FullWidthBox title={pageContent.header.title}>
-            <Text component="p">{pageContent.header.content}</Text>
+            <Text component="p" variant="bigBody">
+              {pageContent.header.content}
+            </Text>
           </FullWidthBox>
           <div className={styles.myProjectsContainer}>
             {pageContent.myProjects.map((project) => (

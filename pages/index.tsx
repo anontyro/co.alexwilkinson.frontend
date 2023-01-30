@@ -1,5 +1,5 @@
-import StandardLayout from "../src/components/_layout/StandardLayout";
-import Text from "../src/components/Text";
+import StandardLayout from "@/components/_layout/StandardLayout";
+import Text from "@/components/Text";
 import BasePageSection from "../src/components/PageSections/BasePageSection";
 import PositionCentre from "../src/components/_layout/components/PositionCentre";
 import { useHomePageContentQuery } from "@/hooks/api/useHomePageContentQuery";
