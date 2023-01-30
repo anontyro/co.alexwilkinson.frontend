@@ -3,13 +3,11 @@ import StandardLayout from "@/components/_layout/StandardLayout";
 import Text from "@/components/Text";
 
 const PAGE_CONTENT = {
-  TITLE: "my portfolio",
-  CONTENT: `This is a showcase of some of my projects I have worked on over
-     the course of my career both professionally and personally. Check out my
-     Github for more projects and code samples.`,
+  TITLE: "my resume",
+  CONTENT: `Hi I’m Alex, a TypeScript developer with special focus on the frontend with React SCSS and an interest in UX`,
 };
 
-const PortfolioPage: React.FC = () => {
+const ResumePage: React.FC = () => {
   return (
     <StandardLayout>
       <FullWidthBox title={PAGE_CONTENT.TITLE}>
@@ -19,4 +17,4 @@ const PortfolioPage: React.FC = () => {
   );
 };
 
-export default PortfolioPage;
+export default ResumePage;
