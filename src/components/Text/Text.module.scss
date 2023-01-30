@@ -1,5 +1,6 @@
 @import "../../scss/spacing";
 @import "../../scss/colours";
+@import "../../scss/breakpoints";
 
 .base {
   margin: 0;
@@ -9,24 +10,29 @@
   font-size: px-to-rem(18px);
   font-weight: 900;
   color: $site-white;
-  font-family: DrukWide;
+  font-family: "DrukWide";
+  -webkit-text-stroke: 1px $site-black;
   text-shadow: 2px 2px 0px #000000, 1px 1px 0px #000000, 3px 4px 1px #000000,
     1px 1px 0px #000000;
+
+  @include breakpointTablet {
+    font-size: px-to-rem(22px);
+  }
 }
 
 .heading1 {
   font-size: px-to-rem(26px);
   font-weight: 900;
   color: $site-white;
+  font-family: "DrukWide";
   margin-bottom: px-to-rem(14px);
-
-  -webkit-text-stroke-width: px-to-rem(1px);
-  text-shadow: 5px 5px 0px $site-black, 4px 4px 0px $site-black,
-    3px 3px 0px $site-black, 2px 2px 0px $site-black, 1px 1px 0px $site-black,
-    -1px 1px 4px #000000;
+  -webkit-text-stroke: px-to-rem(1px) black;
+  text-shadow: 3px 3px 3px $site-colour-primary,
+    5px 3px 0px $site-colour-primary, 2px 2px 0px $site-colour-primary;
 }
 
 .heading2 {
+  font-family: "Syne-Bold";
   font-size: px-to-rem(22px);
   font-weight: 900;
   color: $site-black;
@@ -34,6 +40,7 @@
 }
 
 .heading3 {
+  font-family: "Syne-Bold";
   font-size: px-to-rem(18px);
   font-weight: 900;
   color: $site-black;
