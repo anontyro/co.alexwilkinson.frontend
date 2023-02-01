@@ -30,6 +30,8 @@
   }
   @include breakpointDesktop {
     width: px-to-rem(340px);
+    flex-wrap: wrap;
+    flex-grow: 1;
     height: px-to-rem(300px);
     margin: px-to-rem(15px);
   }

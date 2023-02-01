@@ -1,10 +1,12 @@
 import FullWidthBox from "@/components/PageSections/FullWidthBox/FullWidthBox";
 import StandardLayout from "@/components/_layout/StandardLayout";
 import Text from "@/components/Text";
-import InfoCard from "@/components/Cards/ProjectCard/ProjectCard";
+import ProjectCard from "@/components/Cards/ProjectCard/ProjectCard";
 import { usePortfolioPageContentQuery } from "@/hooks/api/usePortfolioPageContentQuery";
 
 import styles from "./Portfolio.module.scss";
+import PositionCentre from "@/components/_layout/components/PositionCentre";
+import PageLoader from "@/components/Loaders/PageLoader/PageLoader";
 
 const PortfolioPage: React.FC = () => {
   const { data: pageContent, isLoading } = usePortfolioPageContentQuery();
@@ -20,10 +22,15 @@ const PortfolioPage: React.FC = () => {
           </FullWidthBox>
           <div className={styles.myProjectsContainer}>
             {pageContent.myProjects.map((project) => (
-              <InfoCard key={project.id} project={project} />
+              <ProjectCard key={project.id} project={project} />
             ))}
           </div>
         </>
+      )}
+      {isLoading && (
+        <PositionCentre>
+          <PageLoader />
+        </PositionCentre>
       )}
     </StandardLayout>
   );

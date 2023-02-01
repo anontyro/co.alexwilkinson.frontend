@@ -3,6 +3,7 @@ import Text from "@/components/Text";
 import BasePageSection from "../src/components/PageSections/BasePageSection";
 import PositionCentre from "../src/components/_layout/components/PositionCentre";
 import { useHomePageContentQuery } from "@/hooks/api/useHomePageContentQuery";
+import PageLoader from "@/components/Loaders/PageLoader/PageLoader";
 
 export default function Home() {
   const { data: pageContent, isLoading } = useHomePageContentQuery();
@@ -19,6 +20,7 @@ export default function Home() {
             </Text>
           </BasePageSection>
         )}
+        {isLoading && <PageLoader />}
       </PositionCentre>
     </StandardLayout>
   );
