@@ -4,6 +4,8 @@ import styles from "./BaseCard.module.scss";
 
 type Props = {
   padding?: "none" | "small" | "medium" | "large";
+  width?: "full" | "standard";
+  height?: "standard" | "large";
   children: {
     header?: React.ReactNode;
     body: React.ReactNode;
@@ -11,9 +13,19 @@ type Props = {
   };
 };
 
-const BaseCard: React.FC<Props> = ({ children, padding = "small" }) => (
+const BaseCard: React.FC<Props> = ({
+  children,
+  padding = "small",
+  width = "standard",
+  height = "standard",
+}) => (
   <div
-    className={classnames(styles.cardContainer, styles[`padding-${padding}`])}
+    className={classnames(
+      styles.cardContainer,
+      styles[`padding-${padding}`],
+      styles[`width-${width}`],
+      styles[`height-${height}`]
+    )}
   >
     {children.header && <div className={styles.header}>{children.header}</div>}
     <div className={styles.body}>{children.body}</div>

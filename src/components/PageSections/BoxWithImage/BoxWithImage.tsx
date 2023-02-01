@@ -16,7 +16,7 @@ const BoxWithImage: React.FC<Props> = ({ image, title, children }) => (
   <div className={styles.boxContainer}>
     <div className={styles.backgroundBox}></div>
     <div className={styles.boxImage}>
-      <Image src={image} alt={title} />
+      <Image priority placeholder="blur" src={image} alt={title} />
     </div>
     <div
       className={classnames(

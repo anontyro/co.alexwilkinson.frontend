@@ -7,7 +7,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: px-to-rem(250px);
   width: 95%;
   margin: px-to-rem(15px) auto;
   border-radius: 0.5rem;
@@ -32,8 +31,36 @@
     width: px-to-rem(340px);
     flex-wrap: wrap;
     flex-grow: 1;
-    height: px-to-rem(300px);
     margin: px-to-rem(15px);
+  }
+}
+
+.height-standard {
+  height: px-to-rem(250px);
+  @include breakpointDesktop {
+    height: px-to-rem(300px);
+  }
+}
+
+.height-large {
+  height: auto;
+  @include breakpointDesktop {
+    height: px-to-rem(350px);
+  }
+}
+
+.width-full {
+  width: 95%;
+  @include breakpointDesktop {
+    width: 100%;
+  }
+}
+
+.width-standard {
+  width: 95%;
+
+  @include breakpointDesktop {
+    width: px-to-rem(340px);
   }
 }
 

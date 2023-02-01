@@ -1,0 +1,27 @@
+@import "../../scss/spacing";
+@import "../../scss/colours";
+@import "../../scss/breakpoints";
+
+.tag {
+  display: inline-block;
+  padding: px-to-rem(2px) px-to-rem(12px);
+  margin: px-to-rem(5px);
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  font-size: px-to-rem(14px);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 3px 3px 0 0 $site-black;
+  cursor: default;
+}
+
+.tag-primary {
+  background-color: $site-colour-primary;
+  color: $site-white;
+}
+
+.tag-secondary {
+  background-color: $site-colour-secondary;
+  color: $site-black;
+}

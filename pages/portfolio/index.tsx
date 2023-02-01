@@ -10,7 +10,6 @@ import PageLoader from "@/components/Loaders/PageLoader/PageLoader";
 
 const PortfolioPage: React.FC = () => {
   const { data: pageContent, isLoading } = usePortfolioPageContentQuery();
-  console.log("pageContent", pageContent);
   return (
     <StandardLayout>
       {pageContent && !isLoading && (
