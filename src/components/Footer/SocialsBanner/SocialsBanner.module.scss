@@ -8,7 +8,21 @@
   width: px-to-rem(170px);
   justify-content: space-evenly;
   align-items: baseline;
-  padding: px-to-rem(3px);
+  padding: px-to-rem(5px);
   transform: rotate(-5deg);
   margin-bottom: px-to-rem(10px);
+}
+
+.standardIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+    fill: $site-colour-secondary;
+  }
+}
+
+.githubIcon {
+  fill: white;
 }

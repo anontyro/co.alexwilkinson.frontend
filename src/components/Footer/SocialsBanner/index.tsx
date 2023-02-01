@@ -1,8 +1,9 @@
+import classnames from "classnames";
 import FacebookIcon from "../../Icons/facebook.svg";
 import LinkedinIcon from "../../Icons/linkedin.svg";
 import TwitterIcon from "../../Icons/twitter.svg";
 // TODO: update to github icon
-import GithubIcon from "../../Icons/globe.svg";
+import GithubIcon from "../../Icons/github2.svg";
 import Link from "next/link";
 import styles from "./SocialsBanner.module.scss";
 
@@ -26,7 +27,9 @@ const SocialsBanner: React.FC = () => {
         <TwitterIcon className={styles.standardIcon} />
       </Link>
       <Link href={SOCIAL_LINKS.GITHUB} target="_blank">
-        <GithubIcon className={styles.standardIcon} />
+        <GithubIcon
+          className={classnames(styles.standardIcon, styles.githubIcon)}
+        />
       </Link>
     </div>
   );

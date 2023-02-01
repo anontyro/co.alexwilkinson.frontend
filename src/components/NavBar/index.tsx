@@ -80,13 +80,11 @@ const NavBar: React.FC = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   return (
     <div className={styles.navBarContainer}>
-      <div className={styles.brandContainer}>
-        <Link href={APP_HOME}>
-          <Text className={styles.navBarLogo} component="h1" variant="brand">
-            Alex W
-          </Text>
-        </Link>
-      </div>
+      <Link href={APP_HOME} className={styles.brandContainer}>
+        <Text className={styles.navBarLogo} component="h1" variant="brand">
+          Alex W
+        </Text>
+      </Link>
       <div
         onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
         className={styles.hamburgerMenu}
