@@ -4,29 +4,29 @@
 
 .boxContainer {
   margin-top: px-to-rem(10px);
-  padding-top: px-to-rem(100px);
   position: relative;
   margin-bottom: px-to-rem(25px);
+  @include breakpointTablet {
+    padding-top: px-to-rem(100px);
+  }
 }
 
 .backgroundBox {
   position: absolute;
   top: px-to-rem(25px);
-  left: 0;
-  width: 90%;
-  height: 40%;
   background-color: $site-colour-primary;
   z-index: -1;
-
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 40%;
   &:after {
     content: "";
-    position: absolute;
-    top: 0;
+  }
+  @include breakpointTablet {
     left: 0;
-    width: 100%;
-    height: 50%;
-    background-color: $site-colour-primary;
-    opacity: 0.5;
+    width: 90%;
+    height: 40%;
   }
 }
 
@@ -35,16 +35,22 @@
 }
 
 .boxContent {
-  width: 90%;
   background-color: $site-colour-secondary;
   padding: px-to-rem(10px);
   margin-left: auto;
+  margin-top: px-to-rem(25px);
   padding-bottom: px-to-rem(25px);
+  @include breakpointTablet {
+    width: 90%;
+    margin-top: unset;
+  }
 }
 
 .topContentContainer {
-  width: 87%;
   margin-left: auto;
+  @include breakpointTablet {
+    width: 87%;
+  }
 }
 
 // spacer for when there is no top content
@@ -53,11 +59,15 @@
 }
 
 .boxImage {
-  position: absolute;
-  top: 0;
-  left: px-to-rem(20px);
+  display: flex;
+  justify-content: center;
   > img {
     width: px-to-rem(180px);
     height: 100%;
+  }
+  @include breakpointTablet {
+    position: absolute;
+    top: 0;
+    left: px-to-rem(20px);
   }
 }
