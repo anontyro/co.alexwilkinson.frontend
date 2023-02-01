@@ -14,19 +14,27 @@ export interface TextProps extends AllHTMLAttributes<HTMLElement> {
     | "bigBody"
     | "body"
     | "small";
+  capitalise?: boolean;
 }
 
 const PlainText: React.FC<TextProps> = ({
   component,
   variant = "body",
+  capitalise,
   className,
   ...rest
 }) => {
   const Component = component;
+  const capitalizeClass = capitalise ? styles.capitalise : "";
 
   return (
     <Component
-      className={classNames(styles.base, styles[variant], className)}
+      className={classNames(
+        styles.base,
+        styles[variant],
+        capitalizeClass,
+        className
+      )}
       {...rest}
     />
   );
