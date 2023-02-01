@@ -36,7 +36,7 @@
 }
 
 .height-standard {
-  height: px-to-rem(250px);
+  height: auto;
   @include breakpointDesktop {
     height: px-to-rem(300px);
   }

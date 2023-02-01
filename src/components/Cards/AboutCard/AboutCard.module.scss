@@ -1,0 +1,18 @@
+@import "../../../scss/spacing";
+@import "../../../scss/colours";
+@import "../../../scss/breakpoints";
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    > h2 {
+      margin-bottom: 0;
+    }
+  }
+  .subHeading {
+    color: $site-gray;
+  }
+}

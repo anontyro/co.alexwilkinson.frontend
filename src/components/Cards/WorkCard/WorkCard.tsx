@@ -1,4 +1,3 @@
-import PrimaryButton from "@/components/Buttons/PrimaryButton/PrimaryButton";
 import BaseTag from "@/components/Tags/BaseTag";
 import Text from "@/components/Text";
 import { WorkExpItem } from "@/hooks/api/useResumePageContentQuery";

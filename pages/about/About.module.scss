@@ -1,0 +1,12 @@
+@import "../../src/scss/spacing";
+@import "../../src/scss/colours";
+@import "../../src/scss/breakpoints";
+
+.aboutSections {
+  margin-top: px-to-rem(30px);
+}
+
+.sectionContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
