@@ -4,7 +4,7 @@ export type WorkExpItem = {
   company: {
     name: string;
     location: string;
-    url: string;
+    url: string | null;
     description: string;
   };
   tags: string[];
