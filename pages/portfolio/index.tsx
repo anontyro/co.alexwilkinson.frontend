@@ -3,10 +3,10 @@ import StandardLayout from "@/components/_layout/StandardLayout";
 import Text from "@/components/Text";
 import ProjectCard from "@/components/Cards/ProjectCard/ProjectCard";
 import { usePortfolioPageContentQuery } from "@/hooks/api/usePortfolioPageContentQuery";
-
-import styles from "./Portfolio.module.scss";
 import PositionCentre from "@/components/_layout/components/PositionCentre";
 import PageLoader from "@/components/Loaders/PageLoader/PageLoader";
+
+import styles from "./Portfolio.module.scss";
 
 const PortfolioPage: React.FC = () => {
   const { data: pageContent, isLoading } = usePortfolioPageContentQuery();

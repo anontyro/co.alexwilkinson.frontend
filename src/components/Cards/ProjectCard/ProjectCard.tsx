@@ -36,8 +36,11 @@ const ProjectCardBody: React.FC<ProjectCardBodyProps> = ({ body }) => {
   );
 };
 
-const ProjectCardFooter: React.FC = () => {
-  const onClick = () => {};
+type ProjectCardFooterProps = {
+  onClick: () => void;
+};
+
+const ProjectCardFooter: React.FC<ProjectCardFooterProps> = ({ onClick }) => {
   return (
     <div className={styles.footer}>
       <div className={styles.footerBtn}>
@@ -62,7 +65,11 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
           />
         ),
         body: <ProjectCardBody body={project.description} />,
-        footer: <ProjectCardFooter />,
+        footer: (
+          <ProjectCardFooter
+            onClick={() => window.open(`/portfolio/${project.id}`, "_self")}
+          />
+        ),
       }}
     </BaseCard>
   );

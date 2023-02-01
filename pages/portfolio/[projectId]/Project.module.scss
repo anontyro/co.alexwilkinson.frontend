@@ -1,0 +1,19 @@
+@import "../../../src/scss/spacing";
+@import "../../../src/scss/colours";
+@import "../../../src/scss/breakpoints";
+
+.comingSoonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $site-colour-primary;
+  color: $site-white;
+  padding: px-to-rem(100px);
+  border-radius: px-to-rem(10px);
+
+  h1.comingSoon {
+    font-size: px-to-rem(62px);
+    font-weight: 600;
+    margin-bottom: px-to-rem(30px);
+  }
+}
