@@ -2,7 +2,9 @@ export type DataParentType =
   | "Hero"
   | "TextBlock"
   | "StandardList"
-  | "VideoList";
+  | "TextList"
+  | "VideoList"
+  | "Dates";
 
 export type DataType =
   | DataParentType
@@ -19,6 +21,7 @@ export type DataType =
 
 type ContentType = {
   type: DataType;
+  title?: string;
   content: string | ContentType[];
   meta?: {
     url: string | null;

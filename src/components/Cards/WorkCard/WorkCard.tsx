@@ -43,13 +43,13 @@ const WorkCardHeader: React.FC<WorkCardHeaderProps> = ({
 };
 
 type WorkCardBodyProps = {
-  tags: string[];
+  tags?: string[];
   responsibilities: string[];
 };
 
 const WorkCardBody: React.FC<WorkCardBodyProps> = ({
   responsibilities,
-  tags,
+  tags = [],
 }) => {
   return (
     <div className={styles.body}>
@@ -96,7 +96,7 @@ const WorkCard: React.FC<Props> = ({ workExpItem }) => {
         ),
         body: (
           <WorkCardBody
-            tags={workExpItem.tags}
+            tags={workExpItem.meta.tags}
             responsibilities={workExpItem.responsibilities}
           />
         ),

@@ -4,9 +4,15 @@ import BoxWithImage from "@/components/PageSections/BoxWithImage/BoxWithImage";
 import MyPicture from "../../public/assets/my-picture.jpg";
 import MyResumeInfo from "./components/MyResumeInfo/MyResumeInfo";
 import WorkCard from "@/components/Cards/WorkCard/WorkCard";
-import { WorkExpItem } from "@/hooks/api/useResumePageContentQuery";
+import {
+  useResumePageContentQuery,
+  WorkExpItem,
+} from "@/hooks/api/useResumePageContentQuery";
+import { findDataByType, findDataString } from "@/utils/pageContentUtils";
 
 import styles from "./Resume.module.scss";
+import PositionCentre from "@/components/_layout/components/PositionCentre";
+import PageLoader from "@/components/Loaders/PageLoader/PageLoader";
 
 //TODO: move this to the other branch
 const PAGE_CONTENT = {
@@ -25,16 +31,18 @@ const WORK_EXPERIENCE: WorkExpItem[] = [
       location: "London, UK",
       description: "A travel tech company that worked in B2B room selling",
     },
-    tags: [
-      "React",
-      "AWS",
-      "TypeScript",
-      "Node.js",
-      "Next.Js",
-      "Cypress",
-      "Jest",
-      "Postgres",
-    ],
+    meta: {
+      tags: [
+        "React",
+        "AWS",
+        "TypeScript",
+        "Node.js",
+        "Next.Js",
+        "Cypress",
+        "Jest",
+        "Postgres",
+      ],
+    },
     dates: {
       start: "2022-09-10",
       end: "2023-01-17",
@@ -55,7 +63,17 @@ const WORK_EXPERIENCE: WorkExpItem[] = [
       location: "Singapore, Singapore",
       description: "Freight contracting digitisation in a SaaS model",
     },
-    tags: ["SQL", "C#", "TypeScript", "Node.js", "Azure", "Jest", ".Net Core"],
+    meta: {
+      tags: [
+        "SQL",
+        "C#",
+        "TypeScript",
+        "Node.js",
+        "Azure",
+        "Jest",
+        ".Net Core",
+      ],
+    },
     dates: {
       start: "2021-05-01",
       end: "2022-09-10",
@@ -76,7 +94,17 @@ const WORK_EXPERIENCE: WorkExpItem[] = [
       location: "Singapore, Singapore",
       description: "Freight contracting digitisation in a SaaS model",
     },
-    tags: ["SQL", "C#", "TypeScript", "Node.js", "Azure", "Jest", ".Net Core"],
+    meta: {
+      tags: [
+        "SQL",
+        "C#",
+        "TypeScript",
+        "Node.js",
+        "Azure",
+        "Jest",
+        ".Net Core",
+      ],
+    },
     dates: {
       start: "2020-05-08",
       end: "2021-05-01",
@@ -97,7 +125,9 @@ const WORK_EXPERIENCE: WorkExpItem[] = [
       location: "Singapore, Singapore",
       description: "The Netflix of South East Asia",
     },
-    tags: ["React", "AWS", "TypeScript", "Node.js", "Jest", "Koa"],
+    meta: {
+      tags: ["React", "AWS", "TypeScript", "Node.js", "Jest", "Koa"],
+    },
     dates: {
       start: "2018-10-15",
       end: "2020-05-08",
@@ -118,16 +148,18 @@ const WORK_EXPERIENCE: WorkExpItem[] = [
       location: "Singapore, Singapore",
       description: "Large Burmese fast moving consumer goods business",
     },
-    tags: [
-      "React",
-      "C#",
-      "TypeScript",
-      "Node.js",
-      "VueJs",
-      "MySQL",
-      ".Net Core",
-      "ASP.NET",
-    ],
+    meta: {
+      tags: [
+        "React",
+        "C#",
+        "TypeScript",
+        "Node.js",
+        "VueJs",
+        "MySQL",
+        ".Net Core",
+        "ASP.NET",
+      ],
+    },
     dates: {
       start: "2017-05-10",
       end: "2018-09-20",
@@ -148,16 +180,18 @@ const WORK_EXPERIENCE: WorkExpItem[] = [
       location: "Singapore, Singapore",
       description: "Large Burmese fast moving consumer goods business",
     },
-    tags: [
-      "React",
-      "C#",
-      "TypeScript",
-      "Node.js",
-      "VueJs",
-      "MySQL",
-      ".Net Core",
-      "ASP.NET",
-    ],
+    meta: {
+      tags: [
+        "React",
+        "C#",
+        "TypeScript",
+        "Node.js",
+        "VueJs",
+        "MySQL",
+        ".Net Core",
+        "ASP.NET",
+      ],
+    },
     dates: {
       start: "2016-10-10",
       end: "2017-05-10",
@@ -170,22 +204,32 @@ const WORK_EXPERIENCE: WorkExpItem[] = [
 ];
 
 const ResumePage: React.FC = () => {
+  const { data: pageContent, isLoading } = useResumePageContentQuery();
   return (
     <StandardLayout>
-      <BoxWithImage image={MyPicture} title={PAGE_CONTENT.TITLE}>
-        {{
-          top: <MyResumeInfo />,
-          body: <Text component="p">{PAGE_CONTENT.CONTENT}</Text>,
-        }}
-      </BoxWithImage>
-      <Text capitalise component="h2" variant="heading2">
-        {PAGE_CONTENT.SECTION_TITLE}
-      </Text>
-      <div className={styles.workItemContainer}>
-        {WORK_EXPERIENCE.map((workExpItem) => (
-          <WorkCard key={workExpItem.id} workExpItem={workExpItem} />
-        ))}
-      </div>
+      {pageContent && !isLoading && (
+        <>
+          <BoxWithImage image={MyPicture} title={PAGE_CONTENT.TITLE}>
+            {{
+              top: <MyResumeInfo />,
+              body: <Text component="p">{PAGE_CONTENT.CONTENT}</Text>,
+            }}
+          </BoxWithImage>
+          <Text capitalise component="h2" variant="heading2">
+            {PAGE_CONTENT.SECTION_TITLE}
+          </Text>
+          <div className={styles.workItemContainer}>
+            {WORK_EXPERIENCE.map((workExpItem) => (
+              <WorkCard key={workExpItem.id} workExpItem={workExpItem} />
+            ))}
+          </div>
+        </>
+      )}
+      {isLoading && (
+        <PositionCentre>
+          <PageLoader />
+        </PositionCentre>
+      )}
     </StandardLayout>
   );
 };
