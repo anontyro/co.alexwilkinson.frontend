@@ -1,0 +1,835 @@
+{
+  "pageContent": {
+    "content": [
+      {
+        "type": "TextBlock",
+        "content": [
+          {
+            "type": "Title",
+            "content": "My Resume"
+          },
+          {
+            "type": "Body",
+            "content": "Hi I’m Alex I’ve been working in software development since 2016 working on a range of different projects across the stack. I have experience with c# and JavaScript on both the frontend and backend. I specialise in Frontend development currently favouring React"
+          }
+        ]
+      },
+      {
+        "type": "StandardList",
+        "content": [
+          {
+            "type": "Item",
+            "meta": {
+              "tags": [
+                "React",
+                "AWS",
+                "TypeScript",
+                "Node.js",
+                "Next.Js",
+                "Cypress",
+                "Jest",
+                "Postgres"
+              ]
+            },
+            "content": [
+              {
+                "type": "Id",
+                "content": "d905b14a-c955-4264-a749-b0a86ad8b304"
+              },
+              {
+                "type": "Title",
+                "content": "Senior Software Engineer"
+              },
+              {
+                "type": "Dates",
+                "content": [
+                  {
+                    "type": "Date",
+                    "title": "Start Date",
+                    "content": "2022-09-10"
+                  },
+                  {
+                    "type": "Date",
+                    "title": "End Date",
+                    "content": "2023-01-17"
+                  }
+                ]
+              },
+              {
+                "type": "TextList",
+                "title": "company",
+                "content": [
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "name"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Impala"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "url"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "https://www.impala.travel/"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "location"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "London, UK"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "description"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "A travel tech company that worked in B2B room selling"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "TextList",
+                "title": "responsibilities",
+                "content": [
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Developed and implemented a new frontend standard, significantly improving quality across the team and wider organisation"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Collaborated with colleagues to enhance their understanding of the frontend"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Delivered innovative features spanning multiple tiers of technology stack"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Established high coding standards through close work with manager"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Item",
+            "meta": {
+              "tags": [
+                "SQL",
+                "C#",
+                "TypeScript",
+                "Node.js",
+                "Azure",
+                "Jest",
+                ".Net Core"
+              ]
+            },
+            "content": [
+              {
+                "type": "Id",
+                "content": "6896ab24-3488-4b0f-8936-71d24eaee93f"
+              },
+              {
+                "type": "Title",
+                "content": "Tech Lead"
+              },
+              {
+                "type": "Dates",
+                "content": [
+                  {
+                    "type": "Date",
+                    "title": "Start Date",
+                    "content": "2021-05-01"
+                  },
+                  {
+                    "type": "Date",
+                    "title": "End Date",
+                    "content": "2022-09-10"
+                  }
+                ]
+              },
+              {
+                "type": "TextList",
+                "title": "company",
+                "content": [
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "name"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Chinsay"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "url"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "https://www.chinsay.com/"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "location"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Singapore, Singapore"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "description"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Freight contracting digitisation in a SaaS model"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "TextList",
+                "title": "responsibilities",
+                "content": [
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Led experience team, enabling collaboration with product and design to break down requirements into manageable tasks"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Took ownership of frontend applications, continuously finding ways to modernise user interfaces"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Built features from concept to completion, providing guidance for junior members of the team"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Facilitated communication and cross-organisation collaboration"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Item",
+            "meta": {
+              "tags": [
+                "SQL",
+                "C#",
+                "TypeScript",
+                "Node.js",
+                "Azure",
+                "Jest",
+                ".Net Core"
+              ]
+            },
+            "content": [
+              {
+                "type": "Id",
+                "content": "a1b74764-c6f9-43ad-9af2-970435d55721"
+              },
+              {
+                "type": "Title",
+                "content": "Full Stack Engineer"
+              },
+              {
+                "type": "Dates",
+                "content": [
+                  {
+                    "type": "Date",
+                    "title": "Start Date",
+                    "content": "2020-05-08"
+                  },
+                  {
+                    "type": "Date",
+                    "title": "End Date",
+                    "content": "2021-05-01"
+                  }
+                ]
+              },
+              {
+                "type": "TextList",
+                "title": "company",
+                "content": [
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "name"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Chinsay"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "url"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "https://www.chinsay.com/"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "location"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Singapore, Singapore"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "description"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Freight contracting digitisation in a SaaS model"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "TextList",
+                "title": "responsibilities",
+                "content": [
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Developed and implemented a new frontend standard, significantly improving quality across the team and wider organisation"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Collaborated with colleagues to enhance their understanding of the frontend"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Delivered innovative features spanning multiple tiers of technology stack"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Established high coding standards through close work with manager"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Item",
+            "meta": {
+              "tags": ["React", "AWS", "TypeScript", "Node.js", "Jest", "Koa"]
+            },
+            "content": [
+              {
+                "type": "Id",
+                "content": "111d5c83-6436-4c6d-8f9e-f2ba6b505b00"
+              },
+              {
+                "type": "Title",
+                "content": "Frontend Engineer"
+              },
+              {
+                "type": "Dates",
+                "content": [
+                  {
+                    "type": "Date",
+                    "title": "Start Date",
+                    "content": "2018-10-15"
+                  },
+                  {
+                    "type": "Date",
+                    "title": "End Date",
+                    "content": "2020-05-08"
+                  }
+                ]
+              },
+              {
+                "type": "TextList",
+                "title": "company",
+                "content": [
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "name"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Hooq"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "url"
+                      },
+                      {
+                        "type": "Body",
+                        "content": null
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "location"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Singapore, Singapore"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "description"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "The Netflix of South East Asia"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "TextList",
+                "title": "responsibilities",
+                "content": [
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Developed maintainable, high quality Frontend code for the web app as part of a Scrum team"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Led the transition from JavaScript to TypeScript"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Upgraded the codebase to React 16.4+, introducing new Hooks and functional design principles"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Advanced testing practices and refactored components into reusable parts, boosting code quality"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Item",
+            "meta": {
+              "tags": [
+                "React",
+                "C#",
+                "TypeScript",
+                "Node.js",
+                "VueJs",
+                "MySQL",
+                ".Net Core",
+                "ASP.NET"
+              ]
+            },
+            "content": [
+              {
+                "type": "Id",
+                "content": "fbe3c61f-4fcb-40df-9961-13f6a113c093"
+              },
+              {
+                "type": "Title",
+                "content": "Software Engineer"
+              },
+              {
+                "type": "Dates",
+                "content": [
+                  {
+                    "type": "Date",
+                    "title": "Start Date",
+                    "content": "2017-05-10"
+                  },
+                  {
+                    "type": "Date",
+                    "title": "End Date",
+                    "content": "2018-09-20"
+                  }
+                ]
+              },
+              {
+                "type": "TextList",
+                "title": "company",
+                "content": [
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "name"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Loi Hein Group"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "url"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "https://www.loiheingroup.com/"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "location"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Singapore, Singapore"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "description"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Large Burmese fast moving consumer goods business"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "TextList",
+                "title": "responsibilities",
+                "content": [
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Developed and implemented a modern platform to streamline internal operations"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Collaborated with stakeholders to identify and resolve bottlenecks in the flow, leading to increased efficiency"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Incorporated cutting-edge technologies such as QR codes for improved logistics"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Established and expanded the engineering team of the organisation"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Item",
+            "meta": {
+              "tags": [
+                "React",
+                "C#",
+                "TypeScript",
+                "Node.js",
+                "VueJs",
+                "MySQL",
+                ".Net Core",
+                "ASP.NET"
+              ]
+            },
+            "content": [
+              {
+                "type": "Id",
+                "content": "5379a2fa-5a42-4daf-98d5-3135a519c626"
+              },
+              {
+                "type": "Title",
+                "content": "Software Engineering Intern"
+              },
+              {
+                "type": "Dates",
+                "content": [
+                  {
+                    "type": "Date",
+                    "title": "Start Date",
+                    "content": "2016-10-10"
+                  },
+                  {
+                    "type": "Date",
+                    "title": "End Date",
+                    "content": "2017-05-10"
+                  }
+                ]
+              },
+              {
+                "type": "TextList",
+                "title": "company",
+                "content": [
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "name"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Loi Hein Group"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "url"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "https://www.loiheingroup.com/"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "location"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Singapore, Singapore"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "description"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Large Burmese fast moving consumer goods business"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "TextList",
+                "title": "responsibilities",
+                "content": [
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Enhanced security of platform by introducing two factor authentication method via mobile phone"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Developed web based time clock for employee attendance tracking"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
