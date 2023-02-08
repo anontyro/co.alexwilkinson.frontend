@@ -1,0 +1,156 @@
+{
+  "pageContent": {
+    "content": [
+      {
+        "type": "TextBlock",
+        "content": [
+          {
+            "type": "Title",
+            "content": "about me and my work"
+          },
+          {
+            "type": "Body",
+            "content": "Everyone has their own values and beliefs. I believe it is important to try and be aware of the areas you are passionate about and are important to you. Below is some of the values I hold close to my heart."
+          }
+        ]
+      },
+      {
+        "type": "StandardList",
+        "content": [
+          {
+            "type": "Item",
+            "meta": {},
+            "content": [
+              {
+                "type": "Id",
+                "content": "511a1eb3-8118-4f98-8350-04aee537726f"
+              },
+              {
+                "type": "Title",
+                "content": "Work Culture"
+              },
+              {
+                "type": "SubTitle",
+                "content": "I believe in a culture of collaboration and learning"
+              },
+              {
+                "type": "Body",
+                "content": "I enjoy working with like minded smart passionate people. I always look for a culture that will allow me to thrive with more informal communication and a community feel that has mutual respect for one another and people are not afraid to be themselves."
+              }
+            ]
+          },
+          {
+            "type": "Item",
+            "meta": {},
+            "content": [
+              {
+                "type": "Id",
+                "content": "1dec8c72-838d-402d-8966-30a5fa53591e"
+              },
+              {
+                "type": "Title",
+                "content": "Growth and Development"
+              },
+              {
+                "type": "SubTitle",
+                "content": "Always pushing my boundaries"
+              },
+              {
+                "type": "Body",
+                "content": "I don't believe in sitting still and need to always be pushing myself be it with new technologies, new skills or new experiences. I believe in learning from others and sharing my knowledge with others."
+              }
+            ]
+          },
+          {
+            "type": "Item",
+            "meta": {},
+            "content": [
+              {
+                "type": "Id",
+                "content": "c8958085-2e4a-4493-9643-a4d8c6cf040e"
+              },
+              {
+                "type": "Title",
+                "content": "Coding Excellence"
+              },
+              {
+                "type": "SubTitle",
+                "content": "Deliver fast, clean and maintainable code"
+              },
+              {
+                "type": "Body",
+                "content": "It is not enough to deliver a product that works, it needs to be maintainable and scalable. I believe in writing clean code that is easy to understand and maintain. I also believe in writing tests to ensure the code is working as expected."
+              }
+            ]
+          },
+          {
+            "type": "Item",
+            "meta": {},
+            "content": [
+              {
+                "type": "Id",
+                "content": "77f6a234-20a9-4967-a17d-e78731d310d2"
+              },
+              {
+                "type": "Title",
+                "content": "Don't be an observer"
+              },
+              {
+                "type": "SubTitle",
+                "content": "See something, say something"
+              },
+              {
+                "type": "Body",
+                "content": "I believe it is important to speak up and not be afraid to share your opinion. I believe in being open and honest and not being afraid to ask questions. I always hope to create a safe environment where people feel comfortable to share their thoughts and ideas."
+              }
+            ]
+          },
+          {
+            "type": "Item",
+            "meta": {},
+            "content": [
+              {
+                "type": "Id",
+                "content": "f9aab134-fdd1-47b7-a16c-90eef3cca09e"
+              },
+              {
+                "type": "Title",
+                "content": "Lead by example"
+              },
+              {
+                "type": "SubTitle",
+                "content": "Be the change you want to see"
+              },
+              {
+                "type": "Body",
+                "content": "The only real way to lead is by example. I believe in being a good role model and always trying to do the right thing. It is important to work with others to achieve a common goal."
+              }
+            ]
+          },
+          {
+            "type": "Item",
+            "meta": {},
+            "content": [
+              {
+                "type": "Id",
+                "content": "af8dfb96-fa75-49e7-aa9b-526ed7bcca48"
+              },
+              {
+                "type": "Title",
+                "content": "Communication is key"
+              },
+              {
+                "type": "SubTitle",
+                "content": "You can't communicate too much"
+              },
+              {
+                "type": "Body",
+                "content": "The biggest issue I have seen in most businesses is lack of communication. Usually there is some level of misunderstanding or lack of clarity that can lead to tension and frustration. It is from this that I believe it is always important to communicate completely with others"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
