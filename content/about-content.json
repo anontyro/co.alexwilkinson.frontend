@@ -16,6 +16,7 @@
       },
       {
         "type": "StandardList",
+        "title": "my values",
         "content": [
           {
             "type": "Item",
