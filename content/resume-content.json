@@ -16,6 +16,7 @@
       },
       {
         "type": "StandardList",
+        "title": "Work Experience",
         "content": [
           {
             "type": "Item",
