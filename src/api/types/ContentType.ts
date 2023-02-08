@@ -9,6 +9,7 @@ export type DataParentType =
 export type DataType =
   | DataParentType
   | "Title"
+  | "SubTitle"
   | "Body"
   | "StandardList"
   | "Item"
