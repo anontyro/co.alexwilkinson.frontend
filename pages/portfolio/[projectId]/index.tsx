@@ -6,14 +6,12 @@ import { usePortfolioCaseStudContentQuery } from "@/hooks/api/usePortfolioCaseSt
 const ProjectPage = () => {
   const router = useRouter();
   const { projectId } = router.query;
-  const { data: project, isLoading } = usePortfolioCaseStudContentQuery(
-    projectId as string
-  );
-  return (
-    <StandardLayout>
-      <ComingSoonBanner />
-    </StandardLayout>
-  );
+  const {
+    data: project,
+    isLoading,
+    isError,
+  } = usePortfolioCaseStudContentQuery(projectId as string);
+  return <StandardLayout>{isError && <ComingSoonBanner />}</StandardLayout>;
 };
 
 export default ProjectPage;

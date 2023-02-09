@@ -1,15 +1,16 @@
-import { getData } from "@/utils/api/getPageContent";
+import { PostContent } from "@/api/types/PostContent";
+import { getPostData } from "@/utils/api/getPostContent";
 import { useQuery, UseQueryResult } from "@tanstack/react-query";
 
 const getPortfolioCaseStudyData = async (slug: string) => {
-  const response = await getData(`portfolio/${slug}`);
+  const response = await getPostData(`portfolio/${slug}`);
 
-  return null;
+  return response;
 };
 
 export const usePortfolioCaseStudContentQuery = (
   slug: string
-): UseQueryResult<any, Error> =>
+): UseQueryResult<PostContent, Error> =>
   useQuery({
     queryKey: ["data", "portfolio", slug],
     queryFn: () => getPortfolioCaseStudyData(slug),
