@@ -25,7 +25,7 @@ const mapRoutes = (router: NextRouter): React.ReactNode[] => {
   const output: React.ReactNode[] = [];
   for (const route in APP_ROUTES) {
     const routeObj = APP_ROUTES[route];
-    const isActive = router.asPath === routeObj.path;
+    const isActive = router.asPath.includes(routeObj.path);
 
     if (routeObj.isExternal) {
       output.push(

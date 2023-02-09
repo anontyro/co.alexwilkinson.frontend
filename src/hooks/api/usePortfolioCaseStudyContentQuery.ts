@@ -1,4 +1,4 @@
-import { PostContent } from "@/api/types/PostContent";
+import { GhostPost, PostContent } from "@/api/types/PostContent";
 import { getPostData } from "@/utils/api/getPostContent";
 import { useQuery, UseQueryResult } from "@tanstack/react-query";
 
@@ -10,7 +10,7 @@ const getPortfolioCaseStudyData = async (slug: string) => {
 
 export const usePortfolioCaseStudContentQuery = (
   slug: string
-): UseQueryResult<PostContent, Error> =>
+): UseQueryResult<GhostPost[], Error> =>
   useQuery({
     queryKey: ["data", "portfolio", slug],
     queryFn: () => getPortfolioCaseStudyData(slug),

@@ -1,5 +1,5 @@
 import PageContent from "./PageContent";
-import { PostContent } from "./PostContent";
+import { GhostPost, PostContent } from "./PostContent";
 
 export type PageContentResponse = {
   data: {
@@ -10,7 +10,7 @@ export type PageContentResponse = {
 
 export type PostContentResponse = {
   data: {
-    posts: PostContent;
+    posts: GhostPost[];
   };
   errors: string[];
 };

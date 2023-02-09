@@ -18,5 +18,5 @@ export type GhostPost = {
 };
 
 export type PostContent = {
-  posts: [];
+  posts: GhostPost[];
 };

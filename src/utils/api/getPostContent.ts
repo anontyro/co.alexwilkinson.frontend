@@ -1,7 +1,7 @@
-import { PostContent } from "@/api/types/PostContent";
+import { GhostPost, PostContent } from "@/api/types/PostContent";
 import { PageContentResponse, PostContentResponse } from "@/api/types/Response";
 
-export const getPostData = async (uri: string): Promise<PostContent> => {
+export const getPostData = async (uri: string): Promise<GhostPost[]> => {
   const response = await fetch(`/api/${uri}`);
   const json: PostContentResponse = await response.json();
 

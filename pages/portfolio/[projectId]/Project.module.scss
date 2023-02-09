@@ -2,18 +2,44 @@
 @import "../../../src/scss/colours";
 @import "../../../src/scss/breakpoints";
 
-.comingSoonContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: $site-colour-primary;
-  color: $site-white;
-  padding: px-to-rem(100px);
-  border-radius: px-to-rem(10px);
+.blogHeader {
+  margin-top: px-to-rem(10px);
+  position: relative;
+  img {
+    width: 100%;
+    height: px-to-rem(300px);
+  }
+  h2 {
+    position: absolute;
+    bottom: px-to-rem(10px);
+    left: px-to-rem(20px);
+  }
 
-  h1.comingSoon {
-    font-size: px-to-rem(62px);
-    font-weight: 600;
-    margin-bottom: px-to-rem(30px);
+  @include breakpointTablet {
+    img {
+      width: 100%;
+      height: auto;
+      max-height: px-to-rem(700px);
+    }
+    h2 {
+    }
+  }
+}
+
+.blogPostContainer {
+  width: 95%;
+  margin: auto;
+  margin-bottom: px-to-rem(100px);
+  img {
+    width: 100%;
+    height: auto;
+  }
+  figcaption {
+    text-align: center;
+    margin-top: px-to-rem(10px);
+    color: $site-gray;
+  }
+  @include breakpointTablet {
+    width: 100%;
   }
 }

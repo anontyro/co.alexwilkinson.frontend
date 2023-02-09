@@ -1,6 +1,10 @@
 @import "../src/scss/fonts.scss";
 @import "../src/scss/colours";
 
+html {
+  height: 100%;
+}
+
 html,
 body {
   height: 100%;
