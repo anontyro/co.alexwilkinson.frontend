@@ -23,6 +23,146 @@
             "meta": {
               "tags": [
                 "React",
+                "Azure",
+                "TypeScript",
+                "Node.js",
+                "Next.Js",
+                "Cypress",
+                "Jest",
+                "MsSql"
+              ]
+            },
+            "content": [
+              {
+                "type": "Id",
+                "content": "0fc537b6-00f3-4cec-9e6c-47fb7cf53a23"
+              },
+              {
+                "type": "Title",
+                "content": "Technical Lead"
+              },
+              {
+                "type": "Dates",
+                "content": [
+                  {
+                    "type": "Date",
+                    "title": "Start Date",
+                    "content": "2022-02-10"
+                  },
+                  {
+                    "type": "Date",
+                    "title": "End Date",
+                    "content": null
+                  }
+                ]
+              },
+              {
+                "type": "TextList",
+                "title": "company",
+                "content": [
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "name"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "Sea by Maritech"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "url"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "https://www.sea.live"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "location"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "London, UK"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Title",
+                        "content": "description"
+                      },
+                      {
+                        "type": "Body",
+                        "content": "A freight tech company building new software to help the shipping industry"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "TextList",
+                "title": "responsibilities",
+                "content": [
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Lead the frontend migration to a micro-frontend architecture using Next.Js and Typescript"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Lead the development team helping by providing technical guidance and mentoring"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Working across different teams and groups in the organisation to ensure that project are delivered on time and to a high standard"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "TextBlock",
+                    "content": [
+                      {
+                        "type": "Body",
+                        "content": "Worked with the product team to define and implement new features"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Item",
+            "meta": {
+              "tags": [
+                "React",
                 "AWS",
                 "TypeScript",
                 "Node.js",
