@@ -1,7 +1,8 @@
-import { useQuery, UseQueryResult } from "@tanstack/react-query";
-import { getData } from "@/utils/api/getPageContent";
+import { UseQueryResult, useQuery } from "@tanstack/react-query";
 import { findDataByType, findDataString } from "@/utils/pageContentUtils";
+
 import ContentType from "@/api/types/ContentType";
+import { getData } from "@/utils/api/getPageContent";
 
 type ResumePageData = {
   header: {
@@ -133,8 +134,6 @@ const getResumePageData = async (): Promise<ResumePageData> => {
       ...mapWorkExperienceData(workExperienceData?.content as ContentType[]),
     ],
   };
-
-  console.log("output: ", output);
 
   return output;
 };
