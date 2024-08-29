@@ -1,3 +1,6 @@
+// All data is stored on the remote GitHub branch that should be checked out and updated as required
+// Branch: content/main
+
 type DataType = "home" | "about" | "resume" | "portfolio";
 
 const makeApiRouteBase = (route: string) =>

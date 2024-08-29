@@ -1,7 +1,8 @@
+import { UseQueryResult, useQuery } from "@tanstack/react-query";
+import { findDataByType, findDataString } from "@/utils/pageContentUtils";
+
 import ContentType from "@/api/types/ContentType";
 import { getData } from "@/utils/api/getPageContent";
-import { findDataByType, findDataString } from "@/utils/pageContentUtils";
-import { useQuery, UseQueryResult } from "@tanstack/react-query";
 
 type PortfolioPageData = {
   header: {
@@ -55,6 +56,12 @@ const mapTalksData = (talks: ContentType[]) => {
   });
 };
 
+/**
+ * function that is used to get data from the github branch of static JSON data
+ * branch: content/main
+ * data should be updated there if new data is needed
+ * @returns
+ */
 const getPortfolioData = async (): Promise<PortfolioPageData> => {
   const response = await getData("portfolio");
   const header = findDataByType<ContentType>(response.content, "TextBlock");

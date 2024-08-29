@@ -117,6 +117,12 @@ const mapWorkExperienceData = (
   });
 };
 
+/**
+ * function that is used to get data from the github branch of static JSON data
+ * branch: content/main
+ * data should be updated there if new data is needed
+ * @returns
+ */
 const getResumePageData = async (): Promise<ResumePageData> => {
   const response = await getData("resume");
   const header = findDataByType<ContentType>(response.content, "TextBlock");
